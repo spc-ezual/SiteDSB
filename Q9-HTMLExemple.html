@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
     <head>
-        <link rel="stylesheet" href="Css/Image.css">
-        <link rel="stylesheet" href="Css/Secan.css">
+        <link rel="stylesheet" href="Css/Q10b-HTML.css">
+
         <script type="text/javascript" src="Js/Big.js"></script>
         <meta charset="utf-8">
     </head>
@@ -22,7 +23,6 @@
         </h1>
         <section class="BlockContenue">
             <div class="BlockSousTitre">
-                <ul>
                     <p class="News">
                         <h2>
                             Quelque exemples de peuplement des tables
@@ -75,8 +75,58 @@
             </tr>
             </tbody>
                     </table>
-                    </p>
-                </ul>
+                    
+                
+
+            <h2>
+                Les Requete XPath
+            </h2>
+            <h3>
+                Afin de les tester j'ai utiliser le site <a href="https://www.freeformatter.com/xpath-tester.html">XPath Tester</a>
+            </h3>
+            Pour les questoin 1,2,3 j'utilise le document <a href = "Q8a-XML.xml">Q8a-XML</a>
+                <ol>
+                    <li><pre>
+    //glossaire/mot/text()
+    Sortie:
+                        
+        Text='La base de données viens du site IGDB.com'
+        Text='Forme de divertissement'
+        Text='Fait parie de la légendaire série de jeu Zelda'
+        Text='Princesse à sauver dans la plupart des jeux The Legend of Zelda'
+                    </pre></li>
+                    <li><pre>
+    (//glossaire)[1]
+    Sortie :
+        
+        Element='&lt;glossaire auteur="tito"&gt;
+            &lt;mot def="Données"&gt;La base de données viens du site IGDB.com&lt;/mot&gt;
+            &lt;mot def="Jeux vidéos"&gt;Forme de divertissement&lt;/mot&gt;   
+            &lt;/glossaire&gt;'
+                    </pre></li>
+                    <li><pre>
+    //glossaire[not(@auteur)]
+    Sortie :
+    
+        Element='&lt;glossaire&gt;
+            &lt;mot def="Legend of Zelda"&gt;Fait parie de la légendaire série de jeu Zelda&lt;/mot&gt;
+            &lt;mot def="Zelda"&gt;Princesse à sauver dans la plupart des jeux The Legend of Zelda&lt;/mot&gt;   
+            &lt;/glossaire&gt;'
+
+
+                    </pre></li>
+                    <li><pre>
+    //@href
+    
+                    </pre></li>
+                    <li><pre>
+    count(//img)
+
+                    </pre></li>
+                </ol>
+                </p>
+                
+            
             </div>
     </section>
     </body>

@@ -1,0 +1,51 @@
+jeux {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+jeu {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 10px #ccc;
+  border-radius: 5px;
+  width: calc(33.33% - 40px);
+  box-sizing: border-box;
+}
+
+titre, date_de_sortie, developpeur, editeur, genre {
+  display: block;
+  margin-bottom: 10px;
+}
+
+glossaire {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+mot {
+  font-weight: bold;
+}
+
+mot[def]::before {
+  content: attr(def) " : ";
+  font-weight: normal;
+}
+mot[def] {
+  content: def;
+  font-weight: normal;
+}
+
+jeu[id]::before {
+  content: "ID: "attr(id);
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+jeu[id]{
+  content: id;
+  font-weight: bold;
+  margin-right: 5px;
+}
+

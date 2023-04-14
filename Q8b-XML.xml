@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE jeux SYSTEM "Q7-DTD.dtd">
+<?xml-stylesheet href="css/Q10a-XML.css" type="text/css" ?>
+<jeux>
+  <jeu id="1">
+    <glossaire>
+     <mot def="Zelda">Fait parie de la légendaire série de jeu Zelda</mot>
+    </glossaire>
+    <titre>The Legend of Zelda: Breath of the Wild</titre>
+    <date_de_sortie>3 mars 2017</date_de_sortie>
+    <developpeur>Nintendo</developpeur>
+    <editeur>Nintendo</editeur>
+    <genre>Action-RPG</genre>
+  </jeu>
+  <jeu id="2">
+    <titre>Super Mario Odyssey</titre>
+    <date_de_sortie>27 octobre 2017</date_de_sortie>
+    <developpeur>Nintendo</developpeur>
+    <editeur>Nintendo</editeur>
+    <genre>Plateforme</genre>
+  </jeu>
+</jeux>

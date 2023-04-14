@@ -1,0 +1,12 @@
+<!ELEMENT jeux (glossaire?,jeu+)>
+<!ELEMENT jeu (glossaire*, titre, date_de_sortie, developpeur, editeur,genre)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT date_de_sortie (#PCDATA)>
+<!ELEMENT developpeur (#PCDATA)>
+<!ELEMENT editeur (#PCDATA)>
+<!ELEMENT glossaire (mot+)>
+<!ELEMENT mot (#PCDATA)>
+<!ATTLIST mot def CDATA #REQUIRED>
+<!ATTLIST jeu id CDATA #REQUIRED>
+<!ATTLIST glossaire auteur CDATA>

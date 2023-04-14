@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE jeux SYSTEM "Q7-DTD.dtd">
+<?xml-stylesheet href="css/Q10a-XML.css" type="text/css" ?>
+<jeux>
+  <glossaire auteur="tito">
+      <mot def="Données">La base de données viens du site IGDB.com</mot>
+      <mot def="Jeux vidéos">Forme de divertissement</mot>   
+  </glossaire>
+  <jeu id="1">
+    <glossaire>
+      <mot def="Legend of Zelda">Fait parie de la légendaire série de jeu Zelda</mot>
+      <mot def="Zelda">Princesse à sauver dans la plupart des jeux The Legend of Zelda</mot>   
+    </glossaire>
+    <titre>The Legend of Zelda: Breath of the Wild</titre>
+    <date_de_sortie>3 mars 2017</date_de_sortie>
+    <developpeur>Nintendo</developpeur>
+    <editeur>Nintendo</editeur>
+    <genre>Action-RPG</genre>
+    </jeu>
+</jeux>

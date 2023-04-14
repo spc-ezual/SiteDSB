@@ -1,9 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
     <head>
-        <link rel="stylesheet" href="Css/Image.css">
-        <link rel="stylesheet" href="Css/Secan.css">
-        <meta charset="utf-8">
+        <link rel="stylesheet" href="Css/Q10b-HTML.css" />
+        <meta charset="utf-8" />
     </head>
     <body class="Main-BG">
         <!-- l'interface/bouton-->
@@ -14,18 +14,17 @@
             <a href="Q9-HTML.html" class="BBG bouton PetitB"><h2>Schéma</h2></a>
             <a href="Q9-HTMLLienExterrne.html" class="BBD bouton PetitB"><h2>Liens Utiles</h2></a>
         </div>
-        <!-- contenue + titre de la page-->
+        <!-- contenu + titre de la page-->
         <h1 class="TitrePage">
-            Les schéma
+            Les schémas
         </h1>
 
         <section class="BlockContenue">
             <div class="BlockSousTitre">
-                
                 <h2> Schéma relationnel</h2>
                 <ul>
                     <li>Jeux (game_id, titre*, date_de_sortie*, développeur*, éditeur*, note_écologique)</li>
-                    <li>Plateformes (plateforme_id, nom*, consommation_en_W)
+                    <li>Plateformes (plateforme_id, nom*, consommation_en_W)</li>
                     <li>Genres (genre_id, nom*)</li>
                     <li>Avis (avis_id, texte_de_l_avis, note*,game_id*,joueur_id*)</li>
                     <li>Joueur (joueur_id, pseudonyme*, age)</li>
@@ -36,8 +35,7 @@
                 </ul>
                 <h2>Schéma physique</h2>
                 <code>
-<pre>
-
+                    <pre>
     CREATE TABLE Jeux (
       game_id INT PRIMARY KEY,
       titre VARCHAR(255) NOT NULL,
@@ -73,40 +71,40 @@
       age INT
     );
 
-    CREATE TABLE JouableSur (
-      game_id INT,
-      plateforme_id INT,
-      PRIMARY KEY (game_id, plateforme_id),
-      FOREIGN KEY (game_id) REFERENCES Jeux(game_id),
-      FOREIGN KEY (plateforme_id) REFERENCES Plateformes(plateforme_id)
-    );
+        CREATE TABLE JouableSur (
+          game_id INT,
+          plateforme_id INT,
+          PRIMARY KEY (game_id, plateforme_id),
+          FOREIGN KEY (game_id) REFERENCES Jeux(game_id),
+          FOREIGN KEY (plateforme_id) REFERENCES Plateformes(plateforme_id)
+        );
 
-    CREATE TABLE Appartient (
-      game_id INT,
-      genre_id INT,
-      PRIMARY KEY (game_id, genre_id),
-      FOREIGN KEY (game_id) REFERENCES Jeux(game_id),
-      FOREIGN KEY (genre_id) REFERENCES Genres(genre_id)
-    );
+        CREATE TABLE Appartient (
+          game_id INT,
+          genre_id INT,
+          PRIMARY KEY (game_id, genre_id),
+          FOREIGN KEY (game_id) REFERENCES Jeux(game_id),
+          FOREIGN KEY (genre_id) REFERENCES Genres(genre_id)
+        );
 
-    CREATE TABLE JoueSur (
-      joueur_id INT,
-      plateforme_id INT,
-      PRIMARY KEY (joueur_id, plateforme_id),
-      FOREIGN KEY (joueur_id) REFERENCES Joueur(joueur_id),
-      FOREIGN KEY (plateforme_id) REFERENCES Plateformes(plateforme_id)
-    );
+        CREATE TABLE JoueSur (
+          joueur_id INT,
+          plateforme_id INT,
+          PRIMARY KEY (joueur_id, plateforme_id),
+          FOREIGN KEY (joueur_id) REFERENCES Joueur(joueur_id),
+          FOREIGN KEY (plateforme_id) REFERENCES Plateformes(plateforme_id)
+        );
 
-    CREATE TABLE JoueA (
-      joueur_id INT,
-      game_id INT,
-      PRIMARY KEY (joueur_id, game_id),
-      FOREIGN KEY (joueur_id) REFERENCES Joueur(joueur_id),
-      FOREIGN KEY (game_id) REFERENCES Jeux(game_id)
-    );
-</pre>
+        CREATE TABLE JoueA (
+          joueur_id INT,
+          game_id INT,
+          PRIMARY KEY (joueur_id, game_id),
+          FOREIGN KEY (joueur_id) REFERENCES Joueur(joueur_id),
+          FOREIGN KEY (game_id) REFERENCES Jeux(game_id)
+        );
+                </pre>
 
-</code>
+              </code>
             </div>
         </section>
     </body>
