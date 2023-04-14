@@ -1,31 +1,6 @@
 .Main-BG{
-    background: url("Img/forest.jpg") no-repeat center center fixed;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    background-size: cover ;
-}
-.News-BG{
-    background: url("Img/lake.jpg") no-repeat center center fixed;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    background-size: cover ;
-}
-.Blog-BG{
-    background: url("Img/nature.jpg") no-repeat center center fixed;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    background-size: cover ;
-}
-.Podcast-BG{
-    background: url("Img/aurora.jpg") no-repeat center center fixed;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    background-size: cover ;
-}
-.Contact-BG{
     background: url("Img/blackt.jpg") no-repeat center center fixed;
     -webkit-background-size:cover;
     -moz-background-size:cover;
     background-size: cover ;
-
 }

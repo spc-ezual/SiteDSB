@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="Css/Image.css">
+        <link rel="stylesheet" href="Css/Secan.css">
+        <meta charset="utf-8">
+    </head>
+    <body class="Main-BG">
+        <!-- l'interface/bouton-->
+        <div class="Bouton-Site">
+            <a href="Q9-HTMLPresentation.html" class="bouton GrosB"><h2>Projet DSB</h2></a>
+            <a href="Q9-HTMLStructure.html" class="BHG bouton PetitB"><h2>Structure</h2></a>
+            <a href="Q9-HTMLExemple.html" class="BHD bouton PetitB"><h2>Exemple</h2></a>
+            <a href="Q9-HTML.html" class="BBG bouton PetitB"><h2>Schéma</h2></a>
+            <a href="Q9-HTMLLienExterrne.html" class="BBD bouton PetitB"><h2>Liens Utiles</h2></a>
+        </div>
+        <!-- contenue + titre de la page-->
+        <h1 class="TitrePage">
+            Structure de la base de donnée
+        </h1>
+        <section class="BlockContenue">
+            <div class="BlockSousTitre">
+        <br>
+                <h2> MCD : </h2>
+                <img src ="Img/image.png" alt =" la mcd " width = "100%" height = "100%">
+        <ul>
+            <li> 
+                <h2>Jeux</h2>
+                <ul>
+                    <li>
+                        game_id : Identifiant du jeu
+                        
+                    </li>
+                    <li>
+                        titre* : Titre du jeu
+                    </li>
+                    <li>
+                        date de sortie*: Date de sortie du jeu
+                    </li>
+                    <li>
+                        développeur*: Développeur du jeu
+                    </li>
+                    <li>
+                        éditeur*: Éditeur du jeu
+                    </li>
+                </ul>
+            
+            </li>
+            <li> 
+                <h2>Avis</h2>
+                <ul>
+                    <li>
+		              avis_id: Identifiant de l’avis  
+                    </li>
+                    <li>
+		                texte_de_l’avis:Texte de l’avis
+                    </li>
+                    <li>
+                		note*: Note associée à l’avis
+                    </li>
+                    <li>
+                        développeur*: Développeur du jeu
+                    </li>
+                    <li>
+                        éditeur*: Éditeur du jeu
+                    </li>
+                </ul>
+            </li>
+            <li> 
+                <h2>Genres</h2>
+                <ul>
+                    <li>
+		genre_id:Identifiant du genre
+                    </li>
+                    <li>
+		nom*: Nom du genre
+                    </li>
+                </ul>
+            </li>
+            <li> 
+                <h2>plateforme</h2>
+                <ul>
+                    <li>
+		plateforme_id: Identifiant de la plateforme
+                    </li>
+                    <li>
+		nom*: Nom de la plateforme
+                    </li>
+                    <li>
+                    		consommation_en_W : Consommation de la plateforme en activité en W
+
+                    </li>
+                </ul>
+            </li>
+            <li> 
+                <h2>Joueur</h2>
+                <ul>
+                    <li>
+		joueur_id: Identifiant du joueur
+                    </li>
+                    <li>
+		pseudonyme*: Pseudonyme du joueur
+                    </li>
+                    <li>
+		age: Age du joueur
+
+                    </li>
+                </ul>
+            </li>
+            <li> 
+                <h2>Joue sur</h2>
+                <ul>
+                    <li>
+Un joueur joue sur 1 ou plusieurs plateformes : 1,n
+                    </li>
+                    <li>
+Une plateforme abrite 0 ou plusieurs joueurs : 0,n
+                    </li>
+                </ul>
+            </li>
+            
+            <li> 
+                <h2>Jouable sur</h2>
+                <ul>
+                    <li>
+	Un jeu est jouable sur au moins une plateforme : 1,n
+                    </li>
+                    <li>
+	Une plateforme abrite des jeux, mais peut n’en abriter aucun : 0,n
+                    </li>
+                </ul>
+            </li>
+            
+            <li> 
+                <h2>Joue à</h2>
+                <ul>
+                    <li>
+	Un joueur joue à un ou plusieurs jeux : 1,n
+                    </li>
+                    <li>
+	Un jeu possède 0 ou plusieur joueurs : 0,n
+                    </li>
+                </ul>
+            </li>
+            
+            <li> 
+                <h2>Appartient</h2>
+                <ul>
+                    <li>
+Un jeu a au moins 1 genre et peut en avoir plusieurs : 1,n
+                    </li>
+                    <li>
+0 ou plusieurs jeux peuvent tomber sous un même genre
+                    </li>
+                </ul>
+            </li>
+            
+            <li> 
+                <h2>Donne</h2>
+                <ul>
+                    <li>
+Un jeu a au moins 1 genre et peut en avoir plusieurs : 1,n
+                    </li>
+                    <li>
+0 ou plusieurs jeux peuvent tomber sous un même genre
+                    </li>
+                </ul>
+            </li>
+            
+            <li> 
+                <h2>Reçoit</h2>
+                <ul>
+                    <li>
+	Un jeu peut avoir un avis ou ne pas en avoir : 0,n
+                    </li>
+                    <li>
+	Un avis est à propos d’un jeu et un seul : 1,1
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+    </div>
+    </section>
+    </body>
+</html>
